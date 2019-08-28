@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>h</title>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<style>
+body {
+  background-image: url("/static/bk.jpg");
+  background-position: 100% 100%;
+  background-repeat: repeat;
+}
+</style>
+<body>
+	<h1 style="text-align: center">
+h
+</h1>
+
+	<div style="margin: 100px 100px 100px 100px;width:75%;text-align:center;">
+	<form method="post" action="/" enctype="multipart/form-data">
+	<input type="file" name="img">
+	<input type="submit" name="sub">
+</form>
+</div>
+{%if uploaded_img_name%}
+
+<div class="entire-thing">
+<div class="div-left"  style="width: 256px; font-size:100%; text-align:center;"><img src="{{  url_for('images',filename = uploaded_img_name)   }}" alt="uploaded" width="256" height="256" />Input Image</div>
+<div class="div-right" style="width: 256px; font-size:100%; text-align:center;"><img src="{{  url_for('images',filename = result_img_name)   }}" alt="uploaded" width="256" height="256" />Segmented Image</div>
+</div>
+
+{%endif%}
+</div>
+<div class="clear"></div>
+</div>
+
+
+
+
+
+</body>
+</html>

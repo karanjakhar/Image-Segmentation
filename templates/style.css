@@ -1,0 +1,14 @@
+.div-left{
+    float:left;
+    
+}
+.div-right{
+    float:right;
+    
+}
+.entire-thing {
+  width: 650px;
+}
+.clear {
+clear: both;
+}
