@@ -24,5 +24,5 @@ Requirements:-
 
    
 
-![model](/home/karan/kj_pendrive/imgseg/model.png)
+![model](images/model.png)
 
